@@ -353,7 +353,7 @@ header .container {
 }
 
 /* ukuran HP */
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   /* header start */
   .logo img {
     width: 3.5rem;
@@ -417,15 +417,15 @@ header .container {
 
   /* home start */
   .home {
-    background-image: url("assets/bg-mobile.png");
+    /* background-image: url("assets/bg-mobile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -15em;
+    padding-top: -5000em; */
   }
 
   .home .bgwrap {
-    padding: 20rem 0 0 0;
+    padding: 6rem 0 0 0;
   }
   .home .container {
     height: 100%;
