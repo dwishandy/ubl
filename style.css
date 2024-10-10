@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --mainbg: #f5f3cb;
+  --redcol: #b62a2a;
+  --blackcol: #342d2a;
+  --yellowcol: #ffcd50;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", system-ui;
+  background-color: var(--mainbg);
+  color: var(--blackcol);
+  overflow-x: hidden;
+}
+
+/* header start */
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 3rem;
+}
+
+.nav-fixed {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.nav_wrapper {
+  display: flex;
+  margin-left: -4rem;
+}
+
+.nav_item {
+  display: block;
+  padding: 1.5rem 1.6rem;
+}
+
+.nav_item a {
+  color: var(--blackcol);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav_item a:hover {
+  border-bottom: 2px var(--redcol) solid;
+  color: var(--redcol);
+}
+
+.nav_item .last:hover {
+  border-bottom: 2px var(--yellowcol) solid;
+  color: var(--yellowcol);
+}
+
+.nav_toggle {
+  display: none;
+}
+/* header end */
+
+/* home start */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.home .container {
+  padding: 0rem 4rem 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .text {
+  width: 60%;
+}
+
+.home .text h3 {
+  font-size: 18px;
+}
+
+.home .text h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 68px;
+  font-weight: 100;
+  color: var(--redcol);
+  margin: -0.5rem 0 -0.5rem 0;
+}
+
+.home .text h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.home .text p {
+  width: 70%;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.home .text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.home .text .btn {
+  padding: 0.8rem 1.8rem;
+  background-color: var(--redcol);
+  font-size: 14px;
+  border-radius: 25px;
+  color: var(--mainbg);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid;
+}
+
+.home .text .btn:hover {
+  background-color: var(--mainbg);
+  color: var(--redcol);
+  border: 1px solid;
+}
+
+.home .home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-img img {
+  height: 17rem;
+}
+/* home end */
+
+/* about us start */
+.about {
+  padding-top: 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/bg-about.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.about .container {
+  background-color: var(--blackcol);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 -2rem;
+}
+
+.about .about-img {
+  padding: 5rem 0;
+  margin-right: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about-img img {
+  height: 17rem;
+}
+
+.about .text {
+  width: 45%;
+  position: relative;
+  color: var(--mainbg);
+}
+
+.about .text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.about .text h1 span {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin: -0.5rem 0 -0.5rem 0;
+}
+
+.about .text img {
+  position: absolute;
+  top: 1rem;
+  left: 9rem;
+  width: 8rem;
+}
+/* about us end */
+
+/* service start */
+.service {
+  padding: 5rem 0 7rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.service h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.service .services {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service .services .items {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service .services .items img {
+  height: 7rem;
+}
+
+.service .services .items h2 {
+  font-size: 1.3rem;
+  margin: 0.6rem 0;
+}
+
+.service .services .items p {
+  text-align: center;
+}
+/* service end */
+
+/* ukuran 4K */
+@media (min-width: 1441px) {
+  .logo img {
+    width: 8rem;
+  }
+
+  .nav_item {
+    padding: 1.5rem 2.4rem;
+  }
+
+  .nav_item a {
+    font-size: 1.8rem;
+  }
+}
+
+/* ukuran laptop */
+@media (max-width: 1025px) {
+  .home .home-img img {
+    height: 15rem;
+  }
+}
+
+/* ukuran Tablet */
+@media (max-width: 835px) {
+  /* header start */
+  .nav_item {
+    padding: 1.5rem 1rem;
+  }
+
+  .nav_item a {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .logo img {
+    width: 4rem;
+  }
+
+  .right-header {
+    display: none;
+  }
+  /* header end */
+
+  /* home start */
+  .home {
+    padding: 0;
+    height: 100vh;
+  }
+
+  .home .text h3 {
+    font-size: 15px;
+  }
+
+  .home .text h1 {
+    font-size: 58px;
+  }
+
+  .home .text h2 {
+    font-size: 22px;
+  }
+
+  .home .text p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .home .text h4 {
+    font-size: 14px;
+  }
+
+  .home .home-img img {
+    height: 10rem;
+  }
+  /* home end */
+}
+
+/* ukuran HP */
+@media (max-width: 430px) {
+  /* header start */
+  .logo img {
+    width: 3.5rem;
+  }
+
+  .nav-mobile {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+
+  .nav_wrapper {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -20px;
+    z-index: -1;
+    background-color: var(--redcol);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav_item {
+    padding: 0.5rem 0;
+  }
+
+  .nav_item a {
+    color: var(--mainbg);
+  }
+
+  .nav_wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav_toggle {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav_toggle i {
+    font-size: 25px;
+  }
+
+  .nav_item a:hover {
+    border-bottom: 2px var(--yellowcol) solid;
+    color: var(--yellowcol);
+  }
+  /* header end */
+
+  /* home start */
+  .home {
+    background-image: url("assets/bg-mobile.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -15em;
+  }
+
+  .home .bgwrap {
+    padding: 20rem 0 0 0;
+  }
+  .home .container {
+    height: 100%;
+    flex-wrap: wrap-reverse;
+  }
+
+  .home .text,
+  .home .home-img {
+    width: 100%;
+  }
+
+  .home .text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home .text h1 {
+    font-size: 72px;
+  }
+
+  .home .text p {
+    text-align: center;
+  }
+
+  .home .text h4 {
+    text-align: center;
+  }
+
+  .home .home-img {
+    margin-bottom: 2rem;
+  }
+
+  .home .home-img img {
+    height: 13rem;
+  }
+  /* home end */
+
+  .about {
+    margin-top: 20rem;
+    height: 70vh;
+  }
+
+  .about .container {
+    padding: 0 5rem;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .about .about-img {
+    display: none;
+  }
+
+  .about .text {
+    width: 100%;
+  }
+
+  .about .text img {
+    display: none;
+  }
+
+  .about .text h1 {
+    margin-bottom: 2.5rem;
+  }
+  .about .text p {
+    text-align: justify;
+  }
+}
