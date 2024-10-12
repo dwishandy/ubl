@@ -90,6 +90,7 @@ header .container {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .home .container {
@@ -156,6 +157,7 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .home .home-img img {
@@ -271,6 +273,7 @@ header .container {
   margin: 0.6rem 0;
 }
 
+.service .services .items h2,
 .service .services .items p {
   text-align: center;
 }
@@ -350,6 +353,16 @@ header .container {
     height: 10rem;
   }
   /* home end */
+
+  /* service start */
+  .service .services .items {
+    width: 25%;
+  }
+
+  .service .services .items img {
+    height: 4rem;
+  }
+  /* service end */
 }
 
 /* ukuran HP */
@@ -417,15 +430,15 @@ header .container {
 
   /* home start */
   .home {
-    /* background-image: url("assets/bg-mobile.png");
+    background-image: url("assets/bg-mobile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: -5000em; */
+    margin-top: -20em;
   }
 
   .home .bgwrap {
-    padding: 6rem 0 0 0;
+    padding: 20rem 0 0 0;
   }
   .home .container {
     height: 100%;
@@ -444,9 +457,11 @@ header .container {
   }
 
   .home .text h1 {
+    width: 100%;
     font-size: 72px;
   }
 
+  .home .text h1,
   .home .text p {
     text-align: center;
   }
@@ -493,4 +508,23 @@ header .container {
   .about .text p {
     text-align: justify;
   }
+
+  /* service start */
+  .service .container {
+    padding: 0 5rem;
+  }
+
+  .service .services {
+    margin-top: 1rem;
+  }
+
+  .service .services .items {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .service .services .items img {
+    height: 5rem;
+  }
+  /* service end */
 }

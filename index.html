@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <title>WAPIT (Warung Nyepit)</title>
+
+    <!-- koneksi css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- cdn google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cdn package typewriter js -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Header Start -->
@@ -16,7 +32,12 @@
         </div>
         <nav>
           <button class="nav_toggle" aria-expanded="false" type="button">
-            <i class="bi bi-list"></i>
+            <img
+              src="assets/bootstrap-icons/list.svg"
+              alt="Bootstrap"
+              width="32"
+              height="32"
+            />
           </button>
           <ul class="nav_wrapper">
             <li class="nav_item">
@@ -51,14 +72,14 @@
         <div class="container">
           <div class="text">
             <h3>HALO, SELAMAT DATANG DI</h3>
-            <h1>WAPIT</h1>
+            <h1 id="app">WAPIT</h1>
             <h2>(WARUNG NYEPIT)</h2>
             <p>
               Kami menjual berbagai macam makanan dengan menu utama yaitu mie
               kami yang bervarian rasa.
             </p>
             <h4>Ingin tahu lebih lanjut? Klik tombol dibawah ya!</h4>
-            <a href="index.html" class="btn">Tentang kami</a>
+            <a href="#about" class="btn">Tentang kami</a>
           </div>
           <div class="home-img">
             <img src="assets/homepage.png" alt="homepage img" />
@@ -124,6 +145,22 @@
     </section>
     <!-- Contact us Section End -->
 
+    <script>
+      let app = document.getElementById("app");
+
+      let typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 15,
+        deleteSpeed: 100,
+      });
+
+      typewriter
+        .pauseFor(300)
+        .typeString("WAPIT")
+        .pauseFor(3000)
+        .deleteChars(10)
+        .start();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
