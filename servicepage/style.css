@@ -1,0 +1,345 @@
+:root {
+  --mainbg: #f5f3cb;
+  --redcol: #b62a2a;
+  --blackcol: #342d2a;
+  --yellowcol: #ffcd50;
+  --whitecol: #eae9cb;
+}
+
+/* Poppins Thin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/Poppins-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Light */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Poppins-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Regular */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Medium */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/Poppins-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins SemiBold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Bold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Extra Bold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Poppins Black */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/Poppins-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Protest Riot */
+@font-face {
+  font-family: "Protest Riot";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Protest_Riot/ProtestRiot-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Poppins", system-ui;
+  background-color: var(--mainbg);
+  color: var(--blackcol);
+  overflow-x: hidden;
+}
+
+/* header start */
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 3rem;
+}
+
+.nav-fixed {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.nav_wrapper {
+  display: flex;
+  margin-left: -4rem;
+}
+
+.nav_item {
+  display: block;
+  padding: 1.5rem 1.6rem;
+}
+
+.nav_item a {
+  color: var(--blackcol);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav_item a:hover {
+  border-bottom: 2px var(--yellowcol) solid;
+  color: var(--yellowcol);
+}
+
+.nav_toggle {
+  display: none;
+}
+/* header end */
+
+/* service start */
+.service {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.service .services {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service .services .items {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service .services .items img {
+  height: 7rem;
+}
+
+.service .services .items h2 {
+  font-size: 1.3rem;
+  margin: 0.6rem 0;
+}
+
+.service .services .items h2,
+.service .services .items p {
+  text-align: center;
+}
+/* service end */
+
+/* ukuran 4K */
+@media (min-width: 1441px) {
+  .logo img {
+    width: 8rem;
+  }
+
+  .nav_item {
+    padding: 1.5rem 2.4rem;
+  }
+
+  .nav_item a {
+    font-size: 1.8rem;
+  }
+}
+
+/* ukuran laptop */
+@media (max-width: 1025px) {
+  .home .home-img img {
+    height: 15rem;
+  }
+}
+
+/* ukuran Tablet */
+@media (max-width: 835px) {
+  /* header start */
+  .nav_item {
+    padding: 1.5rem 1rem;
+  }
+
+  .nav_item a {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .logo img {
+    width: 4rem;
+  }
+
+  .right-header {
+    display: none;
+  }
+  /* header end */
+
+  /* service start */
+  .service .services .items {
+    width: 25%;
+  }
+
+  .service .services .items img {
+    height: 5rem;
+  }
+  /* service end */
+}
+
+/* ukuran HP */
+@media (max-width: 500px) {
+  /* header start */
+  .logo img {
+    width: 3.5rem;
+  }
+
+  .nav-mobile {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+
+  .nav_wrapper {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -20px;
+    z-index: -1;
+    background-color: var(--redcol);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav_item {
+    padding: 0.5rem 0;
+  }
+
+  .nav_item a {
+    color: var(--mainbg);
+  }
+
+  .nav_wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav_toggle {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav_toggle i {
+    font-size: 25px;
+  }
+
+  .nav_item a:hover {
+    border-bottom: 2px var(--yellowcol) solid;
+    color: var(--yellowcol);
+  }
+  /* header end */
+
+  /* service start */
+  .service .container {
+    padding: 0 5rem;
+  }
+
+  .service .services {
+    margin-top: 2rem;
+  }
+
+  .service .services .items {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .service .services .items img {
+    height: 6rem;
+  }
+  /* service end */
+}

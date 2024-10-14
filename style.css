@@ -94,6 +94,7 @@
 
 body {
   overflow-x: hidden;
+  width: 100%;
   font-family: "Poppins", system-ui;
   background-color: var(--mainbg);
   color: var(--blackcol);
@@ -143,11 +144,6 @@ header .container {
 }
 
 .nav_item a:hover {
-  border-bottom: 2px var(--redcol) solid;
-  color: var(--redcol);
-}
-
-.nav_item .last:hover {
   border-bottom: 2px var(--yellowcol) solid;
   color: var(--yellowcol);
 }
@@ -169,7 +165,6 @@ header .container {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  padding: 1rem 0;
 }
 
 .home .container {
@@ -241,120 +236,6 @@ header .container {
   height: 17rem;
 }
 /* home end */
-
-/* about us start */
-.about {
-  padding-top: 1rem;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("assets/bg-about.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.about .container {
-  background-color: var(--blackcol);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 -2rem;
-}
-
-.about .about-img {
-  padding: 5rem 0;
-  margin-right: -3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about .about-img img {
-  height: 17rem;
-}
-
-.about .text {
-  width: 45%;
-  position: relative;
-  color: var(--mainbg);
-}
-
-.about .text h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-}
-
-.about .text h1 span {
-  font-family: "Protest Riot", sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-  margin: -0.5rem 0 -0.5rem 0;
-}
-
-.about .text img {
-  position: absolute;
-  top: 1rem;
-  left: 9rem;
-  width: 8rem;
-}
-/* about us end */
-
-/* service start */
-.service {
-  padding: 10rem 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.service .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service h1 {
-  text-align: center;
-  width: 100%;
-  font-size: 1.7rem;
-  font-weight: 800;
-}
-
-.service .services {
-  width: 100%;
-  margin-top: 5rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.service .services .items {
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.service .services .items img {
-  height: 7rem;
-}
-
-.service .services .items h2 {
-  font-size: 1.3rem;
-  margin: 0.6rem 0;
-}
-
-.service .services .items h2,
-.service .services .items p {
-  text-align: center;
-}
-/* service end */
 
 /* menu section start */
 .menu {
@@ -561,22 +442,6 @@ header .container {
   }
   /* home end */
 
-  /* about start */
-  .about .about-img img {
-    height: 15rem;
-  }
-  /* about end */
-
-  /* service start */
-  .service .services .items {
-    width: 25%;
-  }
-
-  .service .services .items img {
-    height: 5rem;
-  }
-  /* service end */
-
   /* contact us start */
   .contact {
     padding: 6rem 4rem;
@@ -682,15 +547,13 @@ header .container {
 
   /* home start */
   .home {
-    background-image: url("assets/bg-mobile.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -20em;
   }
 
   .home .bgwrap {
-    padding: 20rem 0 0 0;
+    /* background-image: url("assets/bg-mobile.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
   }
   .home .container {
     height: 100%;
@@ -731,54 +594,11 @@ header .container {
   }
   /* home end */
 
-  .about {
-    margin-top: 20rem;
-    height: 70vh;
+  /* menu start */
+  .menu {
+    padding: 10rem 0rem;
   }
-
-  .about .container {
-    padding: 0 5rem;
-    height: 100%;
-    justify-content: center;
-  }
-
-  .about .about-img {
-    display: none;
-  }
-
-  .about .text {
-    width: 100%;
-  }
-
-  .about .text img {
-    display: none;
-  }
-
-  .about .text h1 {
-    margin-bottom: 2.5rem;
-  }
-  .about .text p {
-    text-align: justify;
-  }
-
-  /* service start */
-  .service .container {
-    padding: 0 5rem;
-  }
-
-  .service .services {
-    margin-top: 2rem;
-  }
-
-  .service .services .items {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .service .services .items img {
-    height: 6rem;
-  }
-  /* service end */
+  /* menu end */
 
   /* contact us start */
   .contact {

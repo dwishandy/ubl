@@ -38,23 +38,23 @@
           </button>
           <ul class="nav_wrapper">
             <li class="nav_item">
-              <a href="#home">Home</a>
+              <a href="index.html">Home</a>
             </li>
 
             <li class="nav_item">
-              <a href="#about">About us</a>
+              <a href="aboutpage/index.html">Tentang Kami</a>
             </li>
 
             <li class="nav_item">
-              <a href="#service">Service</a>
+              <a href="servicepage/index.html">Pelayanan</a>
             </li>
 
             <li class="nav_item">
-              <a href="#menu">Menu</a>
+              <a href="menupage/index.html">Menu</a>
             </li>
 
             <li class="nav_item">
-              <a href="#contact" class="last">Contact Us</a>
+              <a href="contactpage/index.html">Hubungi Kami</a>
             </li>
           </ul>
         </nav>
@@ -65,76 +65,24 @@
 
     <!-- Home Section Start -->
     <section id="home" class="home">
-      <div class="bgwrap">
-        <div class="container">
-          <div class="text">
-            <h3>HALO, SELAMAT DATANG DI</h3>
-            <h1 id="app">WAPIT</h1>
-            <h2>(WARUNG NYEPIT)</h2>
-            <p>
-              Kami menjual berbagai macam makanan dengan menu utama yaitu mie
-              kami yang bervarian rasa.
-            </p>
-            <h4>Ingin tahu lebih lanjut? Klik tombol dibawah ya!</h4>
-            <a href="#about" class="btn">Tentang kami</a>
-          </div>
-          <div class="home-img">
-            <img src="assets/homepage.png" alt="homepage img" />
-          </div>
+      <div class="container">
+        <div class="text">
+          <h3>HALO, SELAMAT DATANG DI</h3>
+          <h1 id="app">WAPIT</h1>
+          <h2>(WARUNG NYEPIT)</h2>
+          <p>
+            Kami menjual berbagai macam makanan dengan menu utama yaitu mie kami
+            yang bervarian rasa.
+          </p>
+          <h4>Ingin tahu lebih lanjut? Klik tombol dibawah ya!</h4>
+          <a href="aboutpage/index.html" class="btn">Tentang kami</a>
+        </div>
+        <div class="home-img">
+          <img src="assets/homepage.png" alt="homepage img" />
         </div>
       </div>
     </section>
     <!-- Home Section End -->
-
-    <!-- About us Section Start -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-img">
-          <img src="assets/about.png" alt="about assets" />
-        </div>
-        <div class="text">
-          <h1>
-            Tentang <br />
-            <span>WAPIT</span>
-          </h1>
-          <img src="assets/mie-wapit.png" alt="mie-wapit" />
-          <p>
-            Awal mula saya mengambil franchise wapit dan membuka cabang di
-            Sepatan, Tangerang. Untuk pusat Wapit sendiri berdiri di Blora, Jawa
-            Tengah pada tahun 2020. Wapit ini didirikan dengan konsep mie dengan
-            perpaduan bumbu khas Jawa. Sehingga menjadi ciri khas Mie Wapit
-            hingga saat ini.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- About us Section End -->
-
-    <!-- Service Section Start -->
-    <section id="service" class="service">
-      <div class="container">
-        <h1>Layanan Kami</h1>
-
-        <div class="services">
-          <div class="items">
-            <img src="assets/service1.png" alt="service 1" />
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet lalala</p>
-          </div>
-          <div class="items">
-            <img src="assets/service2.png" alt="service 2" />
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet lalala</p>
-          </div>
-          <div class="items">
-            <img src="assets/service3.png" alt="service 3" />
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet lalala</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service Section End -->
 
     <!-- Menu Section Start -->
     <section id="menu" class="menu">
@@ -181,6 +129,26 @@
               </div>
               <div class="text">
                 <h1>Mie Cipel</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="img">
+                <img src="assets/menu5.png" alt="Mie Pithiw Rebus" />
+              </div>
+              <div class="text">
+                <h1>Mie Pithiw</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="img">
+                <img src="assets/menu6.png" alt="Pangsit Goreng" />
+              </div>
+              <div class="text">
+                <h1>Mie Japit</h1>
               </div>
             </div>
           </div>
@@ -314,6 +282,7 @@
           835: {
             slidesPerView: 3,
             spaceBetween: 30,
+            slidesPerGroup: 3,
           },
           // Untuk layar ukuran HP
           200: {
