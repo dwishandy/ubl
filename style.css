@@ -3,7 +3,6 @@
   --redcol: #b62a2a;
   --blackcol: #342d2a;
   --yellowcol: #ffcd50;
-  --whitecol: #eae9cb;
 }
 
 /* Poppins Thin */
@@ -239,7 +238,7 @@ header .container {
 
 /* menu section start */
 .menu {
-  background-color: var(--whitecol);
+  background-color: var(--yellowcol);
   padding: 10rem 4rem;
   display: flex;
   justify-content: center;
@@ -263,7 +262,7 @@ header .container {
 
 .menu .swiper-wrapper {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding-bottom: 5rem;
 }
 
@@ -276,26 +275,55 @@ header .container {
 }
 
 .menu .swiper-slide .content {
+  position: relative;
+  width: 75%;
   background-color: var(--redcol);
-  padding: 1.5rem 1.7rem;
-  border-radius: 20px;
+  padding: 1.5rem 0.5rem 4rem 0.5rem;
+  border-radius: 28px;
 }
 
 .menu .swiper-slide .content .img,
 .menu .swiper-slide .content .text {
+  border-radius: 28px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu .swiper-slide .content .img img {
-  height: 10rem;
+  height: 15rem;
 }
 
 .menu .swiper-slide .content .text h1 {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 2rem;
-  font-weight: 600;
-  color: var(--whitecol);
+  font-weight: 700;
+  color: var(--mainbg);
+}
+
+.menu .swiper-slide .content .text p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--mainbg);
+}
+
+.menu .swiper-slide .content .price {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--mainbg);
+}
+
+.menu .swiper-slide .content .price h4 {
+  color: var(--redcol);
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .swiper-pagination {
@@ -375,48 +403,9 @@ header .container {
   }
 
   .home .home-img img {
-    height: 10rem;
+    height: 5rem;
   }
   /* home end */
-
-  /* contact us start */
-  .contact {
-    padding: 6rem 4rem;
-  }
-
-  .contact .container {
-    width: 100%;
-  }
-
-  .contact .contact-text {
-    width: 50%;
-  }
-
-  .contact .contact-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .contact .contact-text p {
-    font-size: 0.8rem;
-  }
-
-  .contact .contact-text .contact-item .contact-item-img {
-    padding: 0.6rem;
-  }
-
-  .contact .contact-text .contact-item .contact-item-img svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .contact .contact-text .contact-item h4 {
-    font-size: 0.8rem;
-  }
-
-  .contact .contact-img img {
-    height: 16rem;
-  }
-  /* contact us end */
 }
 
 /* ukuran HP */
@@ -424,12 +413,6 @@ header .container {
   /* header start */
   .logo img {
     width: 3.5rem;
-  }
-
-  .nav-mobile {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(4px);
-    z-index: 1000;
   }
 
   .nav_wrapper {
@@ -483,15 +466,6 @@ header .container {
   /* header end */
 
   /* home start */
-  .home {
-  }
-
-  .home .bgwrap {
-    /* background-image: url("assets/bg-mobile.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
-  }
   .home .container {
     height: 100%;
     flex-wrap: wrap-reverse;
@@ -535,51 +509,13 @@ header .container {
   .menu {
     padding: 10rem 0rem;
   }
+
+  .menu .swiper-slide .content {
+    width: 70%;
+  }
+
+  .menu .swiper-slide .content .text {
+    padding: 0rem 0.5rem;
+  }
   /* menu end */
-
-  /* contact us start */
-  .contact {
-    padding: 6rem 2rem;
-  }
-
-  .contact .container {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contact .contact-text {
-    width: 100%;
-    padding-left: 2rem;
-  }
-
-  .contact .contact-text h1,
-  .contact .contact-text p {
-    text-align: center;
-  }
-
-  .contact .contact-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .contact .contact-text p {
-    font-size: 0.8rem;
-  }
-
-  .contact .contact-text .contact-item .contact-item-img {
-    padding: 0.6rem;
-  }
-
-  .contact .contact-text .contact-item .contact-item-img svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .contact .contact-text .contact-item h4 {
-    font-size: 0.8rem;
-  }
-
-  .contact .contact-img img {
-    height: 16rem;
-  }
-  /* contact us end */
 }

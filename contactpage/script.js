@@ -13,15 +13,3 @@ navToggle.addEventListener("click", function () {
     this.setAttribute("aria-expanded", "true");
   }
 });
-
-// navbarfixed
-window.onscroll = function () {
-  const header = document.querySelector("header");
-  const fixedNav = header.offsetTop;
-
-  if (window.pageYOffset > fixedNav) {
-    header.classList.add("nav-fixed");
-  } else {
-    header.classList.remove("nav-fixed");
-  }
-};

@@ -312,12 +312,6 @@ header .container {
     width: 3.5rem;
   }
 
-  .nav-mobile {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(4px);
-    z-index: 1000;
-  }
-
   .nav_wrapper {
     display: block;
     position: absolute;
