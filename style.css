@@ -304,69 +304,6 @@ header .container {
 
 /* menu section end */
 
-/* contact us start */
-.contact {
-  padding: 6rem 4rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.contact .container {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact .contact-text {
-  width: 50%;
-  padding-right: 2rem;
-}
-
-.contact .contact-text h1 {
-  font-size: 2rem;
-}
-
-.contact .contact-text p {
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-
-.contact .contact-text .contact-item {
-  display: flex;
-  align-items: center;
-  margin: 1.5rem 0;
-}
-
-.contact .contact-text .contact-item .contact-item-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--redcol);
-  margin-right: 1rem;
-  padding: 0.7rem;
-  border-radius: 5px;
-}
-
-.contact .contact-text .contact-item .contact-item-img svg {
-  fill: #f5f3cb;
-  width: 22px;
-  height: 22px;
-}
-
-.contact .contact-img {
-  display: flex;
-  align-items: center;
-}
-
-.contact .contact-img img {
-  height: 20rem;
-  box-shadow: 10px 10px 1px var(--redcol);
-}
-/* contact us end */
-
 /* ukuran 4K */
 @media (min-width: 1441px) {
   .logo img {

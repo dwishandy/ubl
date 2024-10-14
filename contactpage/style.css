@@ -205,6 +205,12 @@ header .container {
   height: 22px;
 }
 
+.contact .contact-text .contact-item .contact-item-txt a {
+  text-decoration: none;
+  color: var(--blackcol);
+  font-weight: 700;
+}
+
 .contact .contact-img {
   display: flex;
   align-items: center;
