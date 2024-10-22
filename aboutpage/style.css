@@ -3,7 +3,6 @@
   --redcol: #b62a2a;
   --blackcol: #342d2a;
   --yellowcol: #ffcd50;
-  --whitecol: #eae9cb;
 }
 
 /* Poppins Thin */
@@ -144,8 +143,8 @@ header .container {
 }
 
 .nav_item a:hover {
-  border-bottom: 2px var(--redcol) solid;
-  color: var(--redcol);
+  border-bottom: 2px var(--yellowcol) solid;
+  color: var(--yellowcol);
 }
 
 .nav_toggle {
@@ -162,7 +161,7 @@ header .container {
   align-items: center;
   background-image: url("assets/bg-about.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .about .container {
@@ -213,8 +212,52 @@ header .container {
 }
 /* about us end */
 
+/* footer section start */
+footer {
+  padding: 2rem 7rem 7rem 7rem;
+  background-color: var(--yellowcol);
+  color: var(--blackcol);
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .logo-umkm {
+  margin-right: 2rem;
+}
+
+footer .logo-umkm img {
+  background-color: var(--mainbg);
+  height: 6rem;
+  border-radius: 50%;
+}
+
+footer .id-umkm {
+  margin-top: 1rem;
+}
+
+footer .id-umkm .text h1 {
+  font-size: 2.5rem;
+}
+
+footer .id-umkm .text p {
+  font-size: 1.5rem;
+}
+
+footer .id-umkm .lokasi {
+  margin: 2rem 0;
+}
+
+footer .id-umkm .kontak .list {
+  margin: 0.5rem 0;
+}
+/* footer section end */
+
 /* ukuran 4K */
 @media (min-width: 1441px) {
+  /* header section start */
   .logo img {
     width: 8rem;
   }
@@ -224,15 +267,56 @@ header .container {
   }
 
   .nav_item a {
+    font-size: 1.4rem;
+  }
+  /* header section end */
+
+  /* about us start */
+
+  .about .about-img img {
+    height: 25rem;
+  }
+
+  .about .text h1 {
+    font-size: 3rem;
+  }
+
+  .about .text h1 span {
+    font-size: 70px;
+  }
+
+  .about .text img {
+    position: absolute;
+    top: 3rem;
+    left: 12rem;
+    width: 8rem;
+  }
+
+  .about .text p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  /* about us end */
+
+  /* footer section start */
+  footer .id-umkm .text h1 {
+    font-size: 3rem;
+  }
+
+  footer .id-umkm .text p {
     font-size: 1.8rem;
   }
-}
 
-/* ukuran laptop */
-@media (max-width: 1025px) {
-  .home .home-img img {
-    height: 15rem;
+  footer .id-umkm .lokasi h3,
+  footer .id-umkm .kontak .list h3 {
+    font-size: 1.8rem;
   }
+
+  footer .id-umkm .lokasi p,
+  footer .id-umkm .kontak .list p {
+    font-size: 1.3rem;
+  }
+  /* footer section end */
 }
 
 /* ukuran Tablet */
@@ -322,8 +406,8 @@ header .container {
 
   /* about start */
   .about {
-    margin-top: 20rem;
-    height: 70vh;
+    margin-top: -2rem;
+    height: 100vh;
   }
 
   .about .container {
@@ -340,33 +424,18 @@ header .container {
     width: 100%;
   }
 
-  .about .text img {
-    display: none;
-  }
-
   .about .text h1 {
     margin-bottom: 2.5rem;
   }
+
   .about .text p {
     text-align: justify;
   }
+  /* about end */
 
-  /* service start */
-  .service .container {
-    padding: 0 5rem;
+  /* footer section start */
+  footer {
+    padding: 2rem 2rem 7rem 2rem;
   }
-
-  .service .services {
-    margin-top: 2rem;
-  }
-
-  .service .services .items {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .service .services .items img {
-    height: 6rem;
-  }
-  /* service end */
+  /* footer section end */
 }
