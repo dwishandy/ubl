@@ -3,7 +3,6 @@
   --redcol: #b62a2a;
   --blackcol: #342d2a;
   --yellowcol: #ffcd50;
-  --whitecol: #eae9cb;
 }
 
 /* Poppins Thin */
@@ -207,8 +206,52 @@ header .container {
 }
 /* service end */
 
+/* footer section start */
+footer {
+  padding: 2rem 7rem 7rem 7rem;
+  background-color: var(--blackcol);
+  color: #fff;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .logo-umkm {
+  margin-right: 2rem;
+}
+
+footer .logo-umkm img {
+  background-color: var(--mainbg);
+  height: 6rem;
+  border-radius: 50%;
+}
+
+footer .id-umkm {
+  margin-top: 1rem;
+}
+
+footer .id-umkm .text h1 {
+  font-size: 2.5rem;
+}
+
+footer .id-umkm .text p {
+  font-size: 1.5rem;
+}
+
+footer .id-umkm .lokasi {
+  margin: 2rem 0;
+}
+
+footer .id-umkm .kontak .list {
+  margin: 0.5rem 0;
+}
+/* footer section end */
+
 /* ukuran 4K */
 @media (min-width: 1441px) {
+  /* header section start */
   .logo img {
     width: 8rem;
   }
@@ -218,15 +261,48 @@ header .container {
   }
 
   .nav_item a {
+    font-size: 1.4rem;
+  }
+  /* header section end */
+
+  /* service start */
+  .service h1 {
+    font-size: 2.5rem;
+  }
+
+  .service .services .items img {
+    height: 10rem;
+  }
+
+  .service .services .items h2 {
+    font-size: 2rem;
+    margin: 1.2rem 0;
+  }
+
+  .service .services .items p {
+    font-size: 1.5rem;
+  }
+  /* service end */
+
+  /* footer section start */
+  footer .id-umkm .text h1 {
+    font-size: 3rem;
+  }
+
+  footer .id-umkm .text p {
     font-size: 1.8rem;
   }
-}
 
-/* ukuran laptop */
-@media (max-width: 1025px) {
-  .home .home-img img {
-    height: 15rem;
+  footer .id-umkm .lokasi h3,
+  footer .id-umkm .kontak .list h3 {
+    font-size: 1.8rem;
   }
+
+  footer .id-umkm .lokasi p,
+  footer .id-umkm .kontak .list p {
+    font-size: 1.3rem;
+  }
+  /* footer section end */
 }
 
 /* ukuran Tablet */
@@ -342,4 +418,10 @@ header .container {
     height: 6rem;
   }
   /* service end */
+
+  /* footer section start */
+  footer {
+    padding: 2rem 2rem 7rem 2rem;
+  }
+  /* footer section end */
 }

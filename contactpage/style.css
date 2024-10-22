@@ -3,7 +3,6 @@
   --redcol: #b62a2a;
   --blackcol: #342d2a;
   --yellowcol: #ffcd50;
-  --whitecol: #eae9cb;
 }
 
 /* Poppins Thin */
@@ -211,6 +210,10 @@ header .container {
   font-weight: 700;
 }
 
+.contact .contact-text .contact-item .contact-item-txt a:hover {
+  text-decoration: underline;
+}
+
 .contact .contact-img {
   display: flex;
   align-items: center;
@@ -222,8 +225,52 @@ header .container {
 }
 /* contact us end */
 
+/* footer section start */
+footer {
+  padding: 2rem 7rem 7rem 7rem;
+  background-color: var(--blackcol);
+  color: #fff;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .logo-umkm {
+  margin-right: 2rem;
+}
+
+footer .logo-umkm img {
+  background-color: var(--mainbg);
+  height: 6rem;
+  border-radius: 50%;
+}
+
+footer .id-umkm {
+  margin-top: 1rem;
+}
+
+footer .id-umkm .text h1 {
+  font-size: 2.5rem;
+}
+
+footer .id-umkm .text p {
+  font-size: 1.5rem;
+}
+
+footer .id-umkm .lokasi {
+  margin: 2rem 0;
+}
+
+footer .id-umkm .kontak .list {
+  margin: 0.5rem 0;
+}
+/* footer section end */
+
 /* ukuran 4K */
 @media (min-width: 1441px) {
+  /* header section start */
   .logo img {
     width: 8rem;
   }
@@ -233,15 +280,55 @@ header .container {
   }
 
   .nav_item a {
+    font-size: 1.4rem;
+  }
+  /* header section end */
+
+  /* contact us start */
+  .contact .contact-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact .contact-text p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .contact .contact-text .contact-item .contact-item-img svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact .contact-text .contact-item .contact-item-txt h4,
+  .contact .contact-text .contact-item .contact-item-txt a {
+    font-size: 1.3rem;
+  }
+
+  .contact .contact-img img {
+    height: 28rem;
+    box-shadow: 10px 10px 1px var(--redcol);
+  }
+  /* contact us end */
+
+  /* footer section start */
+  footer .id-umkm .text h1 {
+    font-size: 3rem;
+  }
+
+  footer .id-umkm .text p {
     font-size: 1.8rem;
   }
-}
 
-/* ukuran laptop */
-@media (max-width: 1025px) {
-  .home .home-img img {
-    height: 15rem;
+  footer .id-umkm .lokasi h3,
+  footer .id-umkm .kontak .list h3 {
+    font-size: 1.8rem;
   }
+
+  footer .id-umkm .lokasi p,
+  footer .id-umkm .kontak .list p {
+    font-size: 1.3rem;
+  }
+  /* footer section end */
 }
 
 /* ukuran Tablet */
@@ -407,4 +494,10 @@ header .container {
     height: 16rem;
   }
   /* contact us end */
+
+  /* footer section start */
+  footer {
+    padding: 2rem 2rem 7rem 2rem;
+  }
+  /* footer section end */
 }
